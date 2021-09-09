@@ -1,0 +1,18 @@
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "centos/7"
+  
+    config.vm.box_download_insecure=true
+  
+    config.vm.provision "shell", inline: <<-SHELL
+      yum install python3 git -y
+      python3 -m pip install --upgrade pip
+      python3 -m pip install flask flask_sqlalchemy
+      mkdir service && cd service
+      git clone https://github.com/Zenahr/flask-sqlite3-todo-crud .
+      sudo python3 -m flask run --host=0.0.0.0 --port=80 > /dev/null 2>&1 &
+      echo "Deployment has been completed"
+      echo "Service is available at http://$(hostname -I | awk '{print $1}')"
+     SHELL
+  
+  end
