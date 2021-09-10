@@ -1,11 +1,10 @@
-# SRE Praciples - demo project
+# SRE Principles - demo project
 
-This is a demo project to practice IaC code concepts and creating service documentation using devops tools
+This is a demo project to practice IaC concepts and devops tools for service documenting
 
-Code in this repo deploys a flask application to the local platform using Vagrant
-
-Flask Sqllite3 todo CRUD<br>
-*CRUD - Create Read Update Delete
+Code in this repo deploys a python application (Flask Sqllite3 todo CRUD [^1]) to the local platform using Vagrant
+<br>
+[^1]: CRUD - Create Read Update Delete
 
 
 ## Installation
@@ -42,6 +41,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Service diagram
+![diagram](flask_service.png) 
+
 ## Checklist
 ### Lab from Lecture 2 "SRE Basic Principles"
 
@@ -51,10 +53,10 @@ Please make sure to update tests as appropriate.
     - project short description
     - how to add a code
     - how to deploy the application
- - [ ] make an application [diagram](https://github.com/mingrammer/diagrams)
+ - [x] make an application [diagram](https://github.com/mingrammer/diagrams)
  - [x] create Vagrant local environment
  - [x] make a deployment for the [application](https://github.com/Zenahr/flask-sqlite3-todo-crud)
- - [] using Mkdocs create documentation for the project 
+ - [x] using Mkdocs create documentation for the project 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
