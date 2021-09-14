@@ -1,7 +1,7 @@
 ## SLO (Service level objectives)
-* 99% of GETs requests will complete in less than 100ms (average over 1 hour)
+* 99% of GET requests will complete in less than 100ms (average over 1 hour)
 * 90% of add POST requests will complete in less than 200ms
-* 99% of update POST requests will complete and not fail
+* 99% of update POST requests will complete and not fail over 1 hour
 
 
 
